@@ -1,0 +1,93 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="{% static 'C:\Users\Maria\OneDrive\Рабочий стол\web_labs\labaaaa44\app\static\app\content\2.svg'%} " alt="K-pop" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    K-pop
+                    <a class="btn btn-default" href="https://danco-studio.ru/course_adult/">
+                        Читать далее
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'C:\Users\Maria\OneDrive\Рабочий стол\web_labs\labaaaa44\app\static\app\content\4.svg'%}" alt="High heels" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    High heels
+                    <a class="btn btn-default" href="https://danco-studio.ru/course_adult/">
+                        Читать далее
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src=" {% static 'C:\Users\Maria\OneDrive\Рабочий стол\web_labs\labaaaa44\app\static\app\content\5.svg'%} " alt="Jazz Funk" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Jazz Funk
+                    <a class="btn btn-default" href="https://danco-studio.ru/course_adult/">
+                        Читать далее
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+<div class="jumbotron">
+    <h1>Школа танцев "MOVE"</h1>
+    <p class="lead">"MOVE" - это школа танцев, предлагающая профессиональное обучение различным стилям танца. Она известна своим качественным подходом к обучению, высококвалифицированными преподавателями и широким спектром танцевальных программ.</p>
+    <p><a href="https://danco-studio.ru/course_adult/" class="btn btn-primary btn-large">Узнать больше &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Направления</h2>
+        <p>
+            В нашей школе большое разнообразие направлений танца.
+        </p>
+        <p><a class="btn btn-default" href="https://danco-studio.ru/course_adult/">Узнать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Педагоги</h2>
+        <p>Лучшие педагоги города только у нас.</p>
+        <p><a class="btn btn-default" href="https://danco-studio.ru/course_adult/">Узнать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Абонементы</h2>
+        <p>Стоимость занятий узнавайте по ссылке.</p>
+        <p><a class="btn btn-default" href="https://danco-studio.ru/course_adult/">Узнать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Расписание</h2>
+        <p>Актуальное расписание занятий.</p>
+        <p><a class="btn btn-default" href="https://danco-studio.ru/course_adult/">Узнать больше &raquo;</a></p>
+    </div>
+</div>
+
+
+{% endblock %}
